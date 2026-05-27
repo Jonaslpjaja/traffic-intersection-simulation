@@ -16,9 +16,9 @@ from simulation import (
 )
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-INPUT_TABLE = PROJECT_ROOT / "data" / "arrival_parameter_estimates_by_approach_time_period.csv"
-RESULTS_DIR = PROJECT_ROOT / "results"
+PROJECT_ROOT = Path(__file__).resolve().parent
+INPUT_TABLE = PROJECT_ROOT / "arrival_parameter_estimates_by_approach_time_period.csv"
+RESULTS_DIR = PROJECT_ROOT
 
 APPROACHES = ("E", "W", "N", "S")
 DEMAND_SEGMENTS = [
